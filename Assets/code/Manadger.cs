@@ -27,11 +27,7 @@ public class Manadger : MonoBehaviour
             data.Y = 0;
             data.Port = 0;
         }
-        if (data.SavePort > 0 && SceneManager.GetActiveScene().buildIndex > 0)
-        {
-            move.Teleport(true);
-            aud.PlayMuz(1);
-        }
+        if (data.SavePort > 0 && SceneManager.GetActiveScene().buildIndex > 0) move.Teleport(true);
         aud.Volume(data.Volume);
         ui.Volume(data.Volume);
     }

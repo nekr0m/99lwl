@@ -4821,6 +4821,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3500180341030876153}
+  - component: {fileID: -5352356744566588115}
   - component: {fileID: 3500180341030876158}
   - component: {fileID: 3500180341030876152}
   - component: {fileID: 7376798138920572284}
@@ -4848,6 +4849,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5352356744566588115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3500180341030876159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f439f70744e73d44a6864884098a9fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &3500180341030876158
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4910,7 +4923,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bf3e715f15e2ae54c99cba74272fa31f, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

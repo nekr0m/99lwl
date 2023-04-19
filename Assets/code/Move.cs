@@ -39,7 +39,11 @@ public class Move : MonoBehaviour
         if (Man.data.Live == 1)
         {
             Movement = Vector3.zero;
-            if (Ground) Anim.SetInteger("GG", 0);
+            if (Ground)
+            {
+                if (Anim.GetInteger("GG") == 4) Man.aud.PlaySound(2);
+                Anim.SetInteger("GG", 0);
+            }
             if (Timer <= 0.5f && !Ground) Anim.SetInteger("GG", 4);
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -49,7 +53,11 @@ public class Move : MonoBehaviour
                 }
                 else Man.skill.SkillOff();
             }
-            if (Input.GetKeyDown(KeyCode.Space) && Timer <= 0 && Ground) Timer++;
+            if (Input.GetKeyDown(KeyCode.Space) && Timer <= 0 && Ground)
+            {
+                Timer++;
+                Man.aud.PlaySound(1);
+            }
             if (Input.GetKeyDown(KeyCode.F))
             {
                 if (Take)
@@ -140,7 +148,6 @@ public class Move : MonoBehaviour
             Man.data.SleepValue = body.gameObject.GetComponent<Sleep>().Value;
             Man.data.DeepSleep = true;
         }
-        //if (body.gameObject.tag == "Finder") Man.data.SleepValue = body.gameObject.GetComponent<EnemyFind>().EM.Value;
         if (body.gameObject.tag == "Enemy" && gameObject.tag == "GG") LoseGame(0);
         if (body.gameObject.tag == "Finder" && gameObject.tag == "GG" || body.gameObject.tag == "Finder" && gameObject.tag == "GGHide") LoseGame(0);
         if (body.gameObject.tag == "Item" && Man.data.QvestCompleted == 0) Man.data.QvestCompleted = 1;
@@ -171,13 +178,13 @@ public class Move : MonoBehaviour
     }
     public void LoseGame(int a)
     {
-        if (a == 0) Man.ui.WinLoseInfo.text = "";
+        if (a == 0) Man.ui.WinLoseInfo.text = "сяе анахй ядну";
         if (a == 1) Man.ui.WinLoseInfo.text = "";
         if (a == 2) Man.ui.WinLoseInfo.text = "";
         if (a == 3) Man.ui.WinLoseInfo.text = "";
-        Man.ui.WinLose.sprite = Man.data.Deth[a]; 
         Man.data.Live = 0;
-        //Man.aud.PlayMuz(2);
+        Man.aud.PlayMuz(Man.data.Muz.Length - 1);
+        Face.enabled = false;
         WinLose.SetActive(true);
     }
 }

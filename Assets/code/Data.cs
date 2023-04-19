@@ -4,7 +4,6 @@ public class Data : ScriptableObject
 {
     public AudioClip[] Muz;
     public AudioClip[] Sounds;
-    public Sprite[] Deth;
     public const float MaxEnergy = 10;
     public const float EnergyRegen = 1;
     public const int Speed = 4;

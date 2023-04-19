@@ -36,6 +36,7 @@ public class Skill : MonoBehaviour
     }
     public void SkillOff()
     {
+        Man.aud.PlaySound(3);
         Man.data.SkillUsed = 0;
         Man.data.ActiveSkill = 1;
         if (!Man.move.Hide)

@@ -387,6 +387,7 @@ MonoBehaviour:
   Energy: {fileID: 0}
   WinLoseInfo: {fileID: 0}
   Info: {fileID: 0}
+  Learn: {fileID: 0}
   BackArea: {fileID: 0}
   ForvardArea: {fileID: 0}
 --- !u!1 &1029123793
@@ -1042,7 +1043,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 70d8e7b7ee73c7a4daddba2bd51c56a5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d488422a0f7a94e41b4e5debcb90c3f3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
