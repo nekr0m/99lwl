@@ -412,7 +412,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 10
@@ -698,6 +698,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6481387200376912104, guid: 9abfcb8adf8998d48b9b329812258e88, type: 3}
+      propertyPath: Man
+      value: 
+      objectReference: {fileID: 650798117}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9abfcb8adf8998d48b9b329812258e88, type: 3}
 --- !u!4 &178613562 stripped
@@ -4957,6 +4961,14 @@ PrefabInstance:
     - target: {fileID: 2748304437692974731, guid: 9abfcb8adf8998d48b9b329812258e88, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481387200376912104, guid: 9abfcb8adf8998d48b9b329812258e88, type: 3}
+      propertyPath: Man
+      value: 
+      objectReference: {fileID: 650798117}
+    - target: {fileID: 6481387200376912104, guid: 9abfcb8adf8998d48b9b329812258e88, type: 3}
+      propertyPath: Value
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9abfcb8adf8998d48b9b329812258e88, type: 3}

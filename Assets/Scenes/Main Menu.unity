@@ -1106,8 +1106,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\nToka Nachel (Game Designer, Narrative Designer, Sound Designer)\r\n\rganzhagd@gmail.com\n\nStill
-    Enot (Environment Artist + UX/UI Designer + 2D Artist)\nhttps://www.artstation.com/sad_enot\nhttps://www.behance.net/f8c23567\nMail:
+  m_Text: "\nToka Nachel (Game Designer, Narrative Designer, Sound Designer)\r\n\rganzhagd@gmail.com\n\nRiRi
+    (\u0421haracter Artist + 2D Artist)\r\nhttps://www.artstation.com/riri0713\r\n\rMail:
+    rina.ri.19020@gmail.com\n\nStill Enot (Environment Artist + UX/UI Designer +
+    2D Artist)\nhttps://www.artstation.com/sad_enot\nhttps://www.behance.net/f8c23567\nMail:
     orange.2003@yandex.ru\n"
 --- !u!222 &1082123576
 CanvasRenderer:

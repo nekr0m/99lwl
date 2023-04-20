@@ -6,17 +6,13 @@ public class SavePoint : MonoBehaviour
     [SerializeField] bool Item;
     int TimerLimit = 1;
     float Timer;
-    void Start()
-    {
-        if (Item && Man.data.QvestCompleted != 0) gameObject.SetActive(false);
-        Timer = 0;
-    }
     void Update()
     {
         if (Timer > 0) Timer -= Time.deltaTime;
     }
     void OnTriggerEnter2D(Collider2D body)
     {
+        if (Item && Man.data.QvestCompleted != 0) gameObject.SetActive(false);
         if (body.gameObject.tag == "GG" || body.gameObject.tag == "Hide" || body.gameObject.tag == "GGHide")
         {
             if (Timer <= 0 && !Item || Item)

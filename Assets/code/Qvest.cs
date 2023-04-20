@@ -19,9 +19,9 @@ public class Qvest : MonoBehaviour
     public void QSay()
     {
         int a = Man.data.Qvest;
-        if (a == 1) Man.ui.Info.text = "Принести шар из крайней комнаты";
-        if (a == 2) Man.ui.Info.text = "danse";
-        if (a == 3) Man.ui.Info.text = "";
+        if (a == 1) Man.ui.Info.text = "Long ago, I lost a book that I need for my research, and it's located on the other side.";
+        if (a == 2) Man.ui.Info.text = "Can you get the tools for me?";
+        if (a == 3) Man.ui.Info.text = "Could you please retrieve my sheet music?";
         if (a == 4) Man.ui.Info.text = "";
         if (Man.data.QvestCompleted == -1) Man.ui.Info.text = "Talk to the fairy";
         if (Man.data.QvestCompleted == 1) Man.ui.Info.text = "Great, now talk to the fairy!";
