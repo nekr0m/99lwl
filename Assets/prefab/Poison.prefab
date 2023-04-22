@@ -4861,6 +4861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f439f70744e73d44a6864884098a9fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Man: {fileID: 0}
 --- !u!212 &3500180341030876158
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4923,7 +4924,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b241901294ee16943b560699450c59be, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

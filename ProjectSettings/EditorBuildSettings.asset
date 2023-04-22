@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/2 lwl.unity
     guid: ae651f8fed97b2244887c34ea6b5f9a8
   - enabled: 1
+    path: Assets/Scenes/3 lwl.unity
+    guid: c19d111df37903d4d826d0b7154b4330
+  - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: ae736e09be7e3554a83a8cb52549b6c7
   m_configObjects: {}

@@ -8,6 +8,7 @@ public class Ui : MonoBehaviour
     public Image Energy;
     public Text WinLoseInfo;
     public Text Info;
+    public Text qv;
     public Text Learn;
     public Text BackArea;
     public Text ForvardArea;

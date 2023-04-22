@@ -20,7 +20,7 @@ public class EnemyMove : MonoBehaviour
             Direction = 1;
             Face.flipX = false;
         }
-        transform.position = new Vector3(Pos, 0, 0);
+        transform.position = new Vector3(Pos, transform.position.y, 0);
         b = 0.1f;
     }
     void Update()

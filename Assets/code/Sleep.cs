@@ -26,7 +26,7 @@ public class Sleep : MonoBehaviour
             if (Timer > TimerLimit) Timer = TimerLimit;
             if (Timer <= 0) Man.move.LoseGame(0);
             Face.fillAmount = b;
-            if (b < 0.1f) Anim.SetInteger("up", 1);
+            if (b < 0.2f) Anim.SetInteger("up", 1);
             else Anim.SetInteger("up", 0);
             if (Timer == TimerLimit) Snore.SetActive(false);
             else Snore.SetActive(true);

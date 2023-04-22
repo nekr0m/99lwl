@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 983e3d5c553112d4098106c0c4d723a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Man: {fileID: 0}
   Face: {fileID: 1974973503363106605}
   Pos: 0
 --- !u!212 &1974973503363106605
@@ -92,7 +93,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 5368df34e21af1b498578d995e7c173a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -138,7 +139,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ce8859e3f04409c4998701696fb8b9f0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

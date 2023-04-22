@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6045773636575243916}
   - component: {fileID: 8650795955883897358}
   - component: {fileID: 7089479027885520915}
+  - component: {fileID: 8176551781062464786}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Ground
@@ -96,7 +97,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -111,3 +112,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.98, y: 0.57}
   m_EdgeRadius: 0
+--- !u!251 &8176551781062464786
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6688581330276944770}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 90
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1

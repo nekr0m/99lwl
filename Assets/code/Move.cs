@@ -14,7 +14,7 @@ public class Move : MonoBehaviour
     public bool Hide;
     public bool Breathing;
     public int Poison;
-    GameObject CanTake;
+    public GameObject CanTake;
     GameObject Droped;
     List<GameObject> AllBox = new List<GameObject>();
     bool Magic;
@@ -133,7 +133,7 @@ public class Move : MonoBehaviour
     {
         if (body.gameObject.tag == "Poison")
         {
-            if (gameObject.tag == "GG" || gameObject.tag == "Hide") LoseGame(0);
+            if (gameObject.tag == "GG" || gameObject.tag == "Hide") LoseGame(1);
             Man.data.ActiveSkill = 1.5f;
             Poison++;
         }
@@ -178,10 +178,8 @@ public class Move : MonoBehaviour
     }
     public void LoseGame(int a)
     {
-        if (a == 0) Man.ui.WinLoseInfo.text = "сяе анахй ядну";
-        if (a == 1) Man.ui.WinLoseInfo.text = "";
-        if (a == 2) Man.ui.WinLoseInfo.text = "";
-        if (a == 3) Man.ui.WinLoseInfo.text = "";
+        if (a == 0) Man.ui.WinLoseInfo.text = "You've been caught";
+        if (a == 1) Man.ui.WinLoseInfo.text = "You are suffocating";
         Man.data.Live = 0;
         Man.aud.PlayMuz(Man.data.Muz.Length - 1);
         Face.enabled = false;

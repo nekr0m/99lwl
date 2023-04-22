@@ -18,23 +18,24 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b241901294ee16943b560699450c59be, type: 3}
   - {fileID: 8300000, guid: fd03c4c43b9ff2c41abbab38accb28fa, type: 3}
   Sounds:
-  - {fileID: 8300000, guid: d0ccdb0067782f04a90ce4da9ea71e0c, type: 3}
-  - {fileID: 8300000, guid: 6ed49d4b427e2e5478f50e6c9a6be308, type: 3}
-  - {fileID: 8300000, guid: 2ac24a8862de07444966a1466880a18c, type: 3}
-  - {fileID: 8300000, guid: 52f0eb4d7afa5b041b7244c8acfe38ef, type: 3}
+  - {fileID: 8300000, guid: cdc199a48312c3d459ab144ded3bd613, type: 3}
+  - {fileID: 8300000, guid: 38fca087072aeda4d951274b38081a08, type: 3}
+  - {fileID: 8300000, guid: 36247a7f5ce63104db26ffff63d8e635, type: 3}
+  - {fileID: 8300000, guid: 59bb352b58fbf314a8c391b505b544d6, type: 3}
+  - {fileID: 8300000, guid: e1c9ac9130e128e4ca33d79cc830c29d, type: 3}
   ActiveSkill: 1
   SkillUsed: 0
   Live: 1
   Energy: 10
-  X: -4
-  Y: 0.8
+  X: -7
+  Y: 0
   Volume: 0.5
-  DeepSleep: 1
+  DeepSleep: 0
   SleepValue: -1
   Qvest: 1
   QvestCompleted: -1
-  Port: 4
-  SavePort: 2
+  Port: 0
+  SavePort: 4
   Lwl: 1
   NewLwl: 1
   Game: 1

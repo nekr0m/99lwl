@@ -5,6 +5,6 @@ public class Door : MonoBehaviour
     [SerializeField] int Value;
     void Update()
     {
-        if (Man.data.QvestCompleted == Value) gameObject.SetActive(false);
+        if (Man.data.QvestCompleted >= Value) gameObject.SetActive(false);
     }
 }

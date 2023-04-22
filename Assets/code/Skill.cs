@@ -45,6 +45,6 @@ public class Skill : MonoBehaviour
             gameObject.tag = "GG";
         }
         else gameObject.tag = "Hide";
-        if (Man.move.Poison > 0) Man.move.LoseGame(0);
+        if (Man.move.Poison > 0) Man.move.LoseGame(1);
     }
 }

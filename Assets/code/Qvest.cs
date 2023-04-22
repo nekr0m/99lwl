@@ -10,7 +10,7 @@ public class Qvest : MonoBehaviour
             if (!Help) QSay();
             else
             {
-                Man.ui.Info.text = "";
+                Man.ui.qv.text = "";
                 Help = false;
             }
             Man.Hi.Value2 = 0;
@@ -19,13 +19,13 @@ public class Qvest : MonoBehaviour
     public void QSay()
     {
         int a = Man.data.Qvest;
-        if (a == 1) Man.ui.Info.text = "Long ago, I lost a book that I need for my research, and it's located on the other side.";
-        if (a == 2) Man.ui.Info.text = "Can you get the tools for me?";
-        if (a == 3) Man.ui.Info.text = "Could you please retrieve my sheet music?";
-        if (a == 4) Man.ui.Info.text = "";
-        if (Man.data.QvestCompleted == -1) Man.ui.Info.text = "Talk to the fairy";
-        if (Man.data.QvestCompleted == 1) Man.ui.Info.text = "Great, now talk to the fairy!";
-        if (Man.data.QvestCompleted == 2) Man.ui.Info.text = "Well done! Now go to the next level!";
+        if (a == 1) Man.ui.qv.text = "Find a book";
+        if (a == 2) Man.ui.qv.text = "Find the tools";
+        if (a == 3) Man.ui.qv.text = "Find sheet music";
+        if (a == 4) Man.ui.qv.text = "";
+        if (Man.data.QvestCompleted == -1) Man.ui.qv.text = "Explore the area";
+        if (Man.data.QvestCompleted == 1) Man.ui.qv.text = "Task completed";
+        if (Man.data.QvestCompleted == 2) Man.ui.qv.text = "The door is open";
         Help = true;
     }
 }

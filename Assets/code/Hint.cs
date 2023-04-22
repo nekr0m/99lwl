@@ -40,7 +40,7 @@ public class Hint : MonoBehaviour
                     {
                         Man.data.QvestCompleted = 2;
                         Wall.SetActive(false);
-                        Man.ui.Info.text = "Well done! Now go to the next level!";
+                        Man.ui.Info.text = "The door is open";
                         Value2++;
                     }
                     else
@@ -94,25 +94,12 @@ public class Hint : MonoBehaviour
         if (a == 10) Man.ui.Info.text = "Can you get the tools for me? Once I finish, I'll give you new boots that will help you remain unnoticed.";
         //3
         if (a == 11) Man.ui.Info.text = "Hello, strange stone figure! I am so glad to finally meet someone who can help me.";
-        if (a == 12) Man.ui.Info.text = "I have lost all my sheet music, and now I can't play the piano.";
+        if (a == 12) Man.ui.Info.text = "I lost my little harp and now I can't play music.";
         if (a == 13) Man.ui.Info.text = "I know it may seem unimportant compared to other problems in Atlantis, but it is very important to me.";
         if (a == 14) Man.ui.Info.text = "I am willing to help you if you help me. But be careful, monsters can be very dangerous.";
-        if (a == 15) Man.ui.Info.text = "Could you please retrieve my sheet music?";
-        if (a == 16) Man.ui.Info.text = "In gratitude, I will help you acquire the ancient magic of the earth, which will aid you in your difficult journey.";
-        //4
-        if (a == 17) Man.ui.Info.text = "";
-        if (a == 18) Man.ui.Info.text = "";
-        if (a == 19) Man.ui.Info.text = "";
-        if (a == 20) Man.ui.Info.text = "";
-        if (a == 21) Man.ui.Info.text = "";
-        if (a == 22) Man.ui.Info.text = "";
-        if (a == 23) Man.ui.Info.text = "";
-        if (a == 24) Man.ui.Info.text = "";
-        if (a == 25) Man.ui.Info.text = "";
-        if (a == 26) Man.ui.Info.text = "";
-        if (a == 27) Man.ui.Info.text = "";
-        if (a == 28) Man.ui.Info.text = "";
-        if (a == 29) Man.ui.Info.text = "";
+        if (a == 15) Man.ui.Info.text = "Could you please retrieve my harp?";
+        if (a == 16) Man.ui.Info.text = "I can't give you anything in return, but right now I can teach you how to use earthbending that I know myself.";
+        if (a == 17) Man.ui.Info.text = "Try it right now!";
     }
     void Say2()
     {
@@ -134,25 +121,14 @@ public class Hint : MonoBehaviour
         if (a == 12) Man.ui.Info.text = "I've been living here for many years and every day I think about what happened here and why they disappeared. I think it was something terrible and dangerous that we can't even imagine.";
         if (a == 13) Man.ui.Info.text = "Take your boots and good luck on your journey, wanderer!";
         //3
-        if (a == 14) Man.ui.Info.text = "Thank you for helping me find my sheet music! You probably guessed that I am not from this civilization.";
-        if (a == 15) Man.ui.Info.text = "I know their history. Once, a very ancient civilization lived here, famous for its magical knowledge.";
-        if (a == 16) Man.ui.Info.text = "They created many amazing inventions and achieved great success in science and art.";
-        if (a == 17) Man.ui.Info.text = "But then a terrible incident occurred that destroyed them. No one knows exactly what happened, but it is said that there was a powerful cataclysm that destroyed civilization and left only ruins behind.";
-        if (a == 18) Man.ui.Info.text = "I often come here to search for relics of the past and discover them among the ruins. And I found this magnificent ingot, it will help you master the magic of the earth. I will give it to you in gratitude for your help.";
-        if (a == 19) Man.ui.Info.text = "She hands you an ingot that glows with a dark green light.";
-        if (a == 17) Man.ui.Info.text = "This is the Ingot of Earth Magic. It will help you master magical abilities related to nature and the earth. I hope it will be useful to you in your adventures.";
-        //4
-        if (a == 18) Man.ui.Info.text = "";
-        if (a == 19) Man.ui.Info.text = "";
-        if (a == 20) Man.ui.Info.text = "";
-        if (a == 21) Man.ui.Info.text = "";
-        if (a == 22) Man.ui.Info.text = "";
-        if (a == 23) Man.ui.Info.text = "";
-        if (a == 24) Man.ui.Info.text = "";
-        if (a == 25) Man.ui.Info.text = "";
-        if (a == 26) Man.ui.Info.text = "";
-        if (a == 27) Man.ui.Info.text = "";
-        if (a == 28) Man.ui.Info.text = "";
-        if (a == 29) Man.ui.Info.text = "";
+        if (a == 14) Man.ui.Info.text = "Thank you for helping me find my harp!";
+        if (a == 15) Man.ui.Info.text = "I see you are very interested to know what this place is?";
+        if (a == 16) Man.ui.Info.text = "You probably guessed that I am not from this civilization.";
+        if (a == 17) Man.ui.Info.text = "But I know their history. Once, a very ancient civilization lived here, famous for its magical knowledge.";
+        if (a == 18) Man.ui.Info.text = "They created many amazing inventions and achieved great success in science and art.";
+        if (a == 19) Man.ui.Info.text = "But then a terrible incident occurred that destroyed them.";
+        if (a == 17) Man.ui.Info.text = "No one knows exactly what happened, but it is said that there was a powerful cataclysm that destroyed civilization and left only ruins behind.";
+        if (a == 18) Man.ui.Info.text = "That's the extent of my knowledge.";
+        if (a == 19) Man.ui.Info.text = "Good luck, stone heart!";
     }
 }
