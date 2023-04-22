@@ -1,12 +1,10 @@
 using UnityEngine;
 public class EnemyMove : MonoBehaviour
 {
-    [SerializeField] Manadger Man;
     [SerializeField] SpriteRenderer Face;
     public int Pos;
     int Offset = 7;
     int Direction;
-    float b;
     void OnEnable()
     {
         int a = Random.Range(0, 2);
@@ -21,7 +19,6 @@ public class EnemyMove : MonoBehaviour
             Face.flipX = false;
         }
         transform.position = new Vector3(Pos, transform.position.y, 0);
-        b = 0.1f;
     }
     void Update()
     {
@@ -36,14 +33,5 @@ public class EnemyMove : MonoBehaviour
             Direction = 1;
             Face.flipX = false;
         }
-        if (b > 0)
-        {
-            b -= Time.deltaTime;
-            if (b <= 0) Man.aud.PlayMuz(1);
-        }
-    }
-    void OnDisable()
-    {
-        Man.aud.PlayMuz(0);
     }
 }

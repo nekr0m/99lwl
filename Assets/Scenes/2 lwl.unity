@@ -2450,7 +2450,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Man: {fileID: 650798117}
-  Wall: {fileID: 178613563}
   Value: 060000000b000000060000000e000000
   Value2: 0
 --- !u!95 &833692071
@@ -4811,7 +4810,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d488422a0f7a94e41b4e5debcb90c3f3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ce8859e3f04409c4998701696fb8b9f0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

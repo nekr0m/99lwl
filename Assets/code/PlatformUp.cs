@@ -26,7 +26,11 @@ public class PlatformUp : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D body)
     {
-        if (body.gameObject.tag == "GG" || body.gameObject.tag == "GGHide") b = true;
+        if (body.gameObject.tag == "GG" || body.gameObject.tag == "GGHide")
+        {
+            pos = 0;
+            b = true;
+        }
     }
     void OnTriggerExit2D(Collider2D body)
     {

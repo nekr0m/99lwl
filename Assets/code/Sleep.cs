@@ -8,14 +8,7 @@ public class Sleep : MonoBehaviour
     [SerializeField] Animator Anim;
     public int Value;
     int TimerLimit = 5;
-    float Timer;
-    float a;
-    void OnEnable()
-    {
-        a = 0.1f;
-        Timer = TimerLimit; 
-        Snore.SetActive(false);
-    }
+    float Timer = 5;
     void Update()
     {
         if (Timer < TimerLimit || Man.data.DeepSleep && Man.data.SleepValue == Value)
@@ -31,14 +24,5 @@ public class Sleep : MonoBehaviour
             if (Timer == TimerLimit) Snore.SetActive(false);
             else Snore.SetActive(true);
         }
-        if (a > 0)
-        {
-            a -= Time.deltaTime;
-            if (a <= 0) Man.aud.PlayMuz(1);
-        }
-    }
-    void OnDisable()
-    {
-        Man.aud.PlayMuz(0);
     }
 }

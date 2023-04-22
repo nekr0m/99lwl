@@ -11,8 +11,8 @@ public class Audio : MonoBehaviour
     }
     public void PlayMuz(int a)
     {
-        Muz.clip = Man.data.Muz[a];
-        Muz.Play();
+        Muz.clip = Man.data.Sounds[a];
+        Sound.Play();
     }
     public void PlaySound(int a)
     {

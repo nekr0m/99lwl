@@ -2,7 +2,6 @@ using UnityEngine;
 public class Hint : MonoBehaviour
 {
     [SerializeField] Manadger Man;
-    [SerializeField] GameObject Wall;
     [SerializeField] int[] Value;
     public int Value2;
     bool CanSay;
@@ -28,7 +27,7 @@ public class Hint : MonoBehaviour
         {
             if (Man.data.QvestCompleted > 0)
             {
-                if (Value2 < Value[3])
+                if (Value2 < Value[3] - Value[2])
                 {
                     Say2();
                     Value2++;
@@ -36,10 +35,9 @@ public class Hint : MonoBehaviour
                 else
                 {
 
-                    if (Value2 == Value[3])
+                    if (Value2 == Value[3] - Value[2])
                     {
                         Man.data.QvestCompleted = 2;
-                        Wall.SetActive(false);
                         Man.ui.Info.text = "The door is open";
                         Value2++;
                     }
@@ -52,7 +50,7 @@ public class Hint : MonoBehaviour
             }
             else
             {
-                if (Value2 < Value[1])
+                if (Value2 < Value[1] - Value[0])
                 {
                     Say();
                     Value2++;

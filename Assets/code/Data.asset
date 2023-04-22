@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: Data
   m_EditorClassIdentifier: 
   Muz:
-  - {fileID: 8300000, guid: d488422a0f7a94e41b4e5debcb90c3f3, type: 3}
   - {fileID: 8300000, guid: ce8859e3f04409c4998701696fb8b9f0, type: 3}
-  - {fileID: 8300000, guid: b241901294ee16943b560699450c59be, type: 3}
   - {fileID: 8300000, guid: fd03c4c43b9ff2c41abbab38accb28fa, type: 3}
   Sounds:
   - {fileID: 8300000, guid: cdc199a48312c3d459ab144ded3bd613, type: 3}
@@ -27,15 +25,15 @@ MonoBehaviour:
   SkillUsed: 0
   Live: 1
   Energy: 10
-  X: -7
-  Y: 0
+  X: -3.74
+  Y: 0.2
   Volume: 0.5
   DeepSleep: 0
   SleepValue: -1
-  Qvest: 1
-  QvestCompleted: -1
+  Qvest: 3
+  QvestCompleted: 0
   Port: 0
-  SavePort: 4
-  Lwl: 1
+  SavePort: 0
+  Lwl: 4
   NewLwl: 1
   Game: 1

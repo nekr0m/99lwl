@@ -8,11 +8,11 @@ public class SavePoint : MonoBehaviour
     float Timer;
     void Update()
     {
+        if (Man.data.QvestCompleted != 0 && Item) gameObject.SetActive(false);
         if (Timer > 0) Timer -= Time.deltaTime;
     }
     void OnTriggerEnter2D(Collider2D body)
     {
-        if (Item && Man.data.QvestCompleted != 0) gameObject.SetActive(false);
         if (body.gameObject.tag == "GG" || body.gameObject.tag == "Hide" || body.gameObject.tag == "GGHide")
         {
             if (Timer <= 0 && !Item || Item)
@@ -26,5 +26,6 @@ public class SavePoint : MonoBehaviour
                 Timer = TimerLimit;
             }
         }
+        if (Item && Man.data.QvestCompleted != 0) gameObject.SetActive(false);
     }
 }
